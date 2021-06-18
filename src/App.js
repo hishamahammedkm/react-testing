@@ -1,12 +1,16 @@
-import React, { Component } from 'react'
-import HOC from './Hoc'
-class App extends Component {
-  render() {
+import React, { Component, useState } from 'react'
+import Likes from './HOC/Likes'
+import Comments from './HOC/Comment'
+const App=()=> {
+
+  
     return (
       <div>
-       <h1>{this.props.data}</h1>
+        <Likes />
+        <br />
+        <Comments />
       </div>
     )
-  }
+  
 }
-export default HOC(App)
+export default App
