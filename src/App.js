@@ -1,16 +1,16 @@
-import React, { Component, useState } from 'react'
-import Likes from './HOC/Likes'
-import Comments from './HOC/Comment'
-const App=()=> {
+import Todo from "./Compontents/Todo"
+import Button from './Compontents/Button/Button'
+import Search from './Compontents/Search/Search'
 
-  
-    return (
-      <div>
-        <Likes />
-        <br />
-        <Comments />
-      </div>
-    )
-  
+const App = ()=>{
+
+
+  return (
+    <div>
+      <Button />
+      <Search />
+    </div>
+  )
 }
+
 export default App
